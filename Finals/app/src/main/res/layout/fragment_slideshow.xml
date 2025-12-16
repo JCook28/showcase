@@ -34,7 +34,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            android:layout_weight="1"
             android:background="@drawable/rounded_background"
             android:orientation="horizontal"
             android:padding="12dp">
@@ -52,7 +51,8 @@
                 android:layout_weight="2"
                 android:ems="10"
                 android:hint="Your first name"
-                android:inputType="text" />
+                android:inputType="text"
+                android:minHeight="48dp"/>
 
         </LinearLayout>
 
@@ -184,12 +184,12 @@
         <Button
             android:id="@+id/generateBTN"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="68dp"
+            android:layout_marginBottom="67dp"
             android:padding="16dp"
             android:text="Generate"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="67dp"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/fullNameTxt"
