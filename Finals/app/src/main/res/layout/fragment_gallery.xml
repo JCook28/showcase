@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment" android:background="#8ad1c5"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose a Madlib!"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginBottom="30dp"
+            />
+
+        <EditText
+            android:id="@+id/choice1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:hint="1" />
+
+        <EditText
+            android:id="@+id/choice2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:hint="2" />
+
+        <EditText
+            android:id="@+id/choice3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:hint="3" />
+
+        <EditText
+            android:id="@+id/choice4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:hint="4" />
+
+        <EditText
+            android:id="@+id/choice5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:hint="5" />
+
+        <EditText
+            android:id="@+id/choice6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:hint="6" />
+
+        <EditText
+            android:id="@+id/choice7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:hint="7" />
+
+        <EditText
+            android:id="@+id/choice8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:hint="8" />
+
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#134269"
+            android:text="Submit"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="161dp" />
+
+        <Button
+            android:id="@+id/adventureOne"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:text="Monster"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="161dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#134269"/>
+
+        <Button
+            android:id="@+id/adventureTwo"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:text="Kitsune"
+            app:layout_constraintBottom_toTopOf="@+id/button3"
+            app:layout_constraintEnd_toEndOf="@+id/button"
+            app:layout_constraintStart_toStartOf="@+id/button"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#19578a"/>
+
+        <Button
+            android:id="@+id/adventureThree"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:text="Ghost Buffet"
+            app:layout_constraintBottom_toTopOf="@+id/button4"
+            tools:layout_editor_absoluteX="161dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#2d76b3"/>
+
+        <Button
+            android:id="@+id/randomAdventure"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:text="Random"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="159dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#4f99d6"/>
+
+
+        <!--        -->
+        <!--        -->
+        <!--   This part is the stories     -->
+        <!--   Story One - Created by ChatGPT due to uncreativeness (all of them)/ Theme: Monster   -->
+
+
+        <TextView
+            android:id="@+id/monsterTxT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:text="It was a dark and stormy night when I heard (1.sound) coming from the (2. place).
+Curious (and maybe a little foolish), I grabbed my (3. object) and crept closer.
+That's when I saw it...a monstrous (4.creature) with (5. adjective) eyes and (6. body part, plural) that glowed in the dark!
+
+The creature snarled, then suddenly shouted, '(7. phrase)!' before running off into the night.
+Now, every full moon, I can still hear that same (1. sound) echoing through the (2. place)...
+and I swear, sometimes I catch a glimpse of its (8. color) shadow watching me from afar."/>
+
+
+        <!--  Story Two: Theme: Kitsunes      -->
+        <TextView
+            android:id="@+id/kitsuneTxT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:text="Deep in the (1. place), I stumbled upon a mysterious (2. object) glowing under the moonlight.
+As I reached out to touch it, a (3. adjective) fox appeared...but it had (4. number) tails swaying behind it!
+The fox spoke in a (5. tone or emotion) voice, saying 'Mortal, you've found my treasure. to keep it, you must (6. verb) before sunrise.'
+I hesitated, but the kitsune smiled slyly and transformed into a (7. magical creature or object).
+When the sun rose, all that remained was a faint scent of (8. a type of scent) and a single fox tail drifting in the breeze."/>
+
+        <!--  Story Three: Theme: Ghost buffet      -->
+        <TextView
+            android:id="@+id/ghostBuffetTxT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="7dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:text="It all started when I wandered into (1. abandoned place) and found a glowing sign that read “All Spirits Welcome!”
+Inside, a ghostly waiter handed me a (2. utensil) and pointed to a buffet table filled with (3. strange food).
+
+I tried to be polite and sampled a dish made of (4. plural noun) and (5. slimy substance) — it tasted surprisingly (6. adjective).
+The ghosts around me laughed, their voices echoing like broken music boxes.
+
+Then the room grew cold. The lights flickered.
+The head chef floated closer and whispered, “Congratulations… you’ve just eaten the (7. cursed object).”
+Before everything went dark, I heard the waiter say, “Welcome to the staff, (8. your name) — you’ll be serving forever.”"/>
+
+        <Button
+            android:id="@+id/newMadBtn"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#134269"
+            android:text="New Story"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="161dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
