@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3c55"
+    tools:context=".ui.GAN.GANFragment">
+
+
+    <TextView
+        android:id="@+id/ganTitleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Guess A Number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/highlowTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="monospace"
+        android:text="I will tell you if you need to be higher or lower."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ganTitleTxt" />
+
+    <TextView
+        android:id="@+id/winlostTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Guess"
+        android:paddingBottom="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highlowTxt" />
+
+    <EditText
+        android:id="@+id/numberGuess"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_background"
+        android:ems="10"
+        android:hint="Enter a Number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winlostTxt" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#b5607f"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberGuess" />
+</androidx.constraintlayout.widget.ConstraintLayout>

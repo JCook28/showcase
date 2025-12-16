@@ -22,4 +22,11 @@
         android:name="com.example.showcasev2.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_gan"
+        android:name="com.example.showcasev2.ui.GAN.GANFragment"
+        android:label="@string/menu_gan"
+        tools:layout="@layout/fragment_g_a_n"
+        />
 </navigation>
